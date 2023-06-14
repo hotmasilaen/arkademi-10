@@ -1,0 +1,142 @@
+ .title {
+     color: black;
+ }
+
+ .second-title {
+     color: #006cbb;
+ }
+
+ /* p{
+            font-size: x-large;
+            font-weight: bold;
+        } */
+ .description {
+     color: #55575a;
+     font-size: 16px;
+     font-weight: 100;
+ }
+
+ #sub-desc {
+     color: #6b6d71;
+     font-size: 12px;
+ }
+
+ .bg-blue {
+     background-color: #035fab;
+     width: 100%;
+     height: 300px;
+     max-height: 350px;
+     min-height: 280px;
+ }
+
+ .bg-img {
+     background-image: url('./bg-container.ebe0c1e0.webp');
+     width: 100%;
+     height: 300px;
+ }
+
+ .bg-img2 {
+     background-image: url('./icon-pendidikan.png');
+     width: 100%;
+     height: 300px;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .container-card {
+     display: flex;
+     gap: 20px;
+     margin: 0 4rem;
+ }
+
+ .card {
+     border-width: 1px;
+     border-style: solid;
+     border-color: #03A9F4;
+     padding: 30px;
+ }
+
+ .title-card {
+     font-weight: bold;
+ }
+
+ .desc-card {
+     font-size: 12px;
+ }
+
+ .container-button {
+     display: flex;
+     gap: 20px;
+     margin-left: 4rem;
+     margin-right: 4rem;
+     margin-top: 4rem;
+ }
+
+ .btn-masuk {
+     border-width: 1px;
+     border-color: #006cbb;
+     color: #006cbb;
+     background-color: white;
+     padding: 10px 20px;
+     text-align: center;
+     font-weight: bold;
+     border-radius: 5px;
+ }
+
+ .btn-daftar {
+     background-color: #006cbb;
+     text-align: center;
+     font-weight: bold;
+     border-radius: 5px;
+     border: none;
+     color: white;
+     padding: 10px 20px;
+ }
+
+ .container-course {
+     margin-top: 4rem;
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+ }
+
+ img {
+     filter: blur(2px);
+ }
+
+ .transisi {
+     width: 300px;
+     height: 100px;
+     background-color: #006cbb;
+     /* transition: width 2s, height 2s;
+            transition-delay: 2s; */
+     animation: kotak 2s ease 3 alternate forwards running;
+ }
+
+ /* .transisi:hover{
+            width: 100%;
+            height: 500px;
+        } */
+
+ @keyframes kotak {
+     from {
+         width: 300px;
+         height: 100px;
+     }
+
+     to {
+         width: 100%;
+         height: 500px;
+     }
+
+ }
+
+ @media only screen and (max-width: 600px) {
+     .container-card {
+         flex-direction: column;
+         margin-left: 20px;
+         margin-right: 20px;
+     }
+
+     .desc-card {
+         display: none;
+     }
+ }
