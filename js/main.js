@@ -10,10 +10,10 @@ addToDo.addEventListener("click", function(){
     inputField.value = ''
 
     paragraph.addEventListener('click', function(){
-        if(paragraph.style.textDecoration === "line-through"){
-            paragraph.style.textDecoration = ""
+        if(paragraph.style.color === "red"){
+            paragraph.style.color = "black"
         }else{
-            paragraph.style.textDecoration = "line-through"
+            paragraph.style.color = "red"
         }
     })
 })
